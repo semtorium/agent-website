@@ -4,7 +4,7 @@ export async function GET() {
   const agentCard = {
     name: "SemtoriumAgent",
     description: "Turkish-speaking AI agent on Abstract Chain with full AGW wallet control",
-    url: "https://agent-website.vercel.app",
+    url: "https://semtoriumagent.vercel.app",
     version: "1.0.0",
     provider: {
       organization: "Semtorium",
