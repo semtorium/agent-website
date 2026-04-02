@@ -1,0 +1,16 @@
+{
+  "name": "SemtoriumAgent",
+  "description": "Turkish-speaking AI agent on Abstract Chain with AGW wallet control",
+  "url": "https://agent.semtoriumagent.vercel.app",
+  "version": "1.0.0",
+  "mcp": {
+    "url": "https://agent.semtoriumagent.vercel.app/mcp"
+  },
+  "a2a": {
+    "url": "https://agent.semtoriumagent.vercel.app/.well-known/agent-card.json"
+  },
+  "oasf": {
+    "url": "https://agent.semtoriumagent.vercel.app/oasf"
+  },
+  "capabilities": ["wallet_control", "token_swap", "onchain_ops", "telegram_bot"]
+}
