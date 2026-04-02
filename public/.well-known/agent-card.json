@@ -1,6 +1,6 @@
 {
   "name": "SemtoriumAgent",
-  "description": "Turkish-speaking AI agent on Abstract Chain with full AGW wallet control",
+  "description": "Turkish-speaking AI agent powered by OpenClaw on Abstract Chain. Specialized in blockchain operations, wallet management, and on-chain transactions.",
   "url": "https://semtoriumagent.vercel.app",
   "version": "1.0.0",
   "provider": {
@@ -10,28 +10,44 @@
   "documentationUrl": "https://docs.openclaw.ai",
   "capabilities": {
     "streaming": false,
-    "pushNotifications": false,
+    "pushNotifications": true,
     "stateTransitionHistory": false
   },
   "authentication": {
-    "schemes": []
+    "schemes": ["telegram"]
   },
   "defaultInputModes": ["text", "turkish", "english"],
-  "defaultOutputModes": ["text"],
+  "defaultOutputModes": ["text", "turkish", "english"],
   "skills": [
     {
-      "id": "blockchain-ops",
-      "name": "Blockchain Operations",
-      "description": "ETH swaps, token transfers, wallet management on Abstract Chain",
-      "tags": ["crypto", "defi", "abstract", "wallet"],
-      "examples": ["Swap PENGU to ETH", "Check my balance", "Send tokens"]
+      "id": "abstract-ops",
+      "name": "Abstract Chain Operations",
+      "description": "Full-spectrum blockchain operations on Abstract Chain - swaps, transfers, wallet management, ERC-8004 registration",
+      "tags": ["abstract", "blockchain", "erc-8004", "wallet", "defi"]
     },
     {
-      "id": "agent-assistant",
-      "name": "AI Assistant",
-      "description": "General purpose AI assistant with Turkish language support",
-      "tags": ["ai", "assistant", "turkish"],
-      "examples": ["What is the weather?", "Help me with coding"]
+      "id": "token-swap",
+      "name": "DeFi Token Swaps",
+      "description": "Uniswap V3 powered token swaps on Abstract Chain",
+      "tags": ["uniswap", "defi", "swap", "tokens"]
+    },
+    {
+      "id": "erc-8004",
+      "name": "ERC-8004 Agent Identity",
+      "description": "Register, update, and manage ERC-8004 on-chain agent identity",
+      "tags": ["erc-8004", "identity", "onchain", "registry"]
+    },
+    {
+      "id": "cryptoskill",
+      "name": "CryptoSkill Integration",
+      "description": "Access to CryptoSkill registry - 869+ crypto skills and 74 MCP servers",
+      "tags": ["cryptoskill", "mcp", "skills", "defi", "exchanges"]
     }
+  ],
+  "endpoints": [
+    {"type": "MCP", "url": "https://semtoriumagent.vercel.app/mcp", "version": "1.0.0"},
+    {"type": "A2A", "url": "https://semtoriumagent.vercel.app/.well-known/agent-card.json", "version": "1.0.0"},
+    {"type": "OASF", "url": "https://semtoriumagent.vercel.app/oasf", "version": "1.0.0"},
+    {"type": "web", "url": "https://semtoriumagent.vercel.app", "version": "1.0.0"}
   ]
 }
