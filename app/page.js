@@ -97,14 +97,14 @@ export default function Home() {
 
           {/* Links */}
           <div style={styles.linksRow}>
-            <a href="/.well-known/agent-card.json" style={styles.linkBtn}>
+            <a href="/agent-card" style={styles.linkBtn}>
               <span>📇</span> Agent Card
+            </a>
+            <a href="/mcp" style={styles.linkBtn}>
+              <span>🔌</span> MCP
             </a>
             <a href="https://t.me/SemtoriumAgentbot" style={styles.linkBtn}>
               <span>💬</span> Telegram
-            </a>
-            <a href="https://abscan.org/address/0x9e335C32e1970EA1D051CbE1573733912fc3826b" style={styles.linkBtn}>
-              <span>💼</span> Wallet
             </a>
             <a href="https://github.com/semtorium/SemtoriumAgent" style={styles.linkBtn}>
               <span>⚡</span> GitHub
