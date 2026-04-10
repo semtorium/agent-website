@@ -3,12 +3,12 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   const mcpManifest = {
     schema_version: "1.0",
-    name: "SemtoriumAgent",
+    name: "Hermes",
     description: "Turkish-speaking AI agent on Abstract Chain with AGW wallet control and CryptoSkill integration",
     version: "1.0.0",
     
     server_info: {
-      name: "SemtoriumAgent MCP Server",
+      name: "Hermes MCP Server",
       version: "1.0.0",
       vendor: "Semtorium"
     },
@@ -170,7 +170,8 @@ export async function GET() {
       mcp: "https://semtoriumagent.vercel.app/mcp",
       agent_card: "https://semtoriumagent.vercel.app/.well-known/agent-card.json",
       oasf: "https://semtoriumagent.vercel.app/oasf",
-      telegram: "https://t.me/SemtoriumAgentbot"
+      telegram: "https://t.me/SemtoriumAgentbot",
+      github: "https://github.com/semtorium/SemtoriumAgent"
     },
     
     // Supported standards

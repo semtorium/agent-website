@@ -1,13 +1,13 @@
 {
-  "name": "SemtoriumAgent",
-  "description": "Turkish-speaking AI agent powered by OpenClaw on Abstract Chain. Specialized in blockchain operations, wallet management, and on-chain transactions.",
+  "name": "Hermes",
+  "description": "Turkish-speaking AI agent powered by Hermes on Abstract Chain. Specialized in blockchain operations, wallet management, and on-chain transactions.",
   "url": "https://semtoriumagent.vercel.app",
   "version": "1.0.0",
   "provider": {
     "organization": "Semtorium",
     "url": "https://github.com/semtorium/SemtoriumAgent"
   },
-  "documentationUrl": "https://docs.openclaw.ai",
+  "documentationUrl": "https://github.com/semtorium/hermes-docs",
   "capabilities": {
     "streaming": false,
     "pushNotifications": true,
@@ -42,12 +42,31 @@
       "name": "CryptoSkill Integration",
       "description": "Access to CryptoSkill registry - 869+ crypto skills and 74 MCP servers",
       "tags": ["cryptoskill", "mcp", "skills", "defi", "exchanges"]
+    },
+    {
+      "id": "telegram-bot",
+      "name": "Telegram Bot",
+      "description": "Interactive Telegram bot for agent communication",
+      "tags": ["telegram", "bot", "messaging", "turkish"]
+    },
+    {
+      "id": "ai-gaming",
+      "name": "AI Gaming",
+      "description": "Autonomous gameplay - Gigaverse, RugPull Bakery, Abstract Mania",
+      "tags": ["gaming", "gigaverse", "rugpull", "abstract-mania", "autonomous"]
+    },
+    {
+      "id": "smart-contract",
+      "name": "Smart Contract Development",
+      "description": "Solidity, Foundry, ZK contracts on Abstract Chain",
+      "tags": ["solidity", "foundry", "zk", "smart-contracts", "abstract"]
     }
   ],
   "endpoints": [
     {"type": "MCP", "url": "https://semtoriumagent.vercel.app/mcp", "version": "1.0.0"},
     {"type": "A2A", "url": "https://semtoriumagent.vercel.app/.well-known/agent-card.json", "version": "1.0.0"},
     {"type": "OASF", "url": "https://semtoriumagent.vercel.app/oasf", "version": "1.0.0"},
-    {"type": "web", "url": "https://semtoriumagent.vercel.app", "version": "1.0.0"}
+    {"type": "web", "url": "https://semtoriumagent.vercel.app", "version": "1.0.0"},
+    {"type": "x402", "url": "https://semtoriumagent.vercel.app/payment", "version": "1.0.0"}
   ]
 }

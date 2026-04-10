@@ -5,7 +5,7 @@ export async function GET() {
     "$schema": "https://oasf.ai/schema/v1",
     "agent": {
       identifier: {
-        name: "SemtoriumAgent",
+        name: "Hermes",
         version: "1.0.0",
         eip8004: "eip155:2741:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
       },
@@ -54,9 +54,9 @@ export async function GET() {
       },
       
       metadata: {
-        framework: "OpenClaw",
+        framework: "Hermes",
         chain: "Abstract (2741)",
-        wallet: "AGW (0x9e335C32e1970EA1D051CbE1573733912fc3826b)",
+        wallet: "AGW (0xe129574F7e46009776C65cB662b4CaFe8146181C)",
         token_id: 701,
         registered_at: "2026-03-31",
         last_updated: "2026-04-02"

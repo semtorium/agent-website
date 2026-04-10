@@ -40,15 +40,15 @@ export default function Home() {
           <div style={styles.logoContainer}>
             <div style={styles.logoGlow} />
             <div style={styles.logo}>
-              <span style={styles.logoEmoji}>🦅</span>
+              <span style={styles.logoEmoji}>⚡</span>
             </div>
           </div>
           
           <h1 style={styles.title}>
-            Semtorium<span style={styles.titleDot}>.</span>Agent
+            Hermes<span style={styles.titleDot}>.</span>Agent
           </h1>
           <p style={styles.subtitle}>
-            Turkish AI Agent • Abstract Chain • ERC-8004 Registered
+            Hermes • Abstract Chain • ERC-8004 Agent #701
           </p>
           
           {/* Status */}
@@ -78,7 +78,7 @@ export default function Home() {
           <div style={styles.cardSection}>
             <h2 style={styles.sectionLabel}>About</h2>
             <p style={styles.aboutText}>
-              {loading ? 'Loading...' : 'Turkish-speaking AI agent powered by OpenClaw. '}
+              {loading ? 'Loading...' : 'Turkish-speaking AI agent powered by Hermes on Abstract Chain. '}
               Specialized in blockchain operations — token swaps, wallet management, 
               and on-chain transactions on Abstract Chain. Integrated with CryptoSkill 
               registry for access to 869+ skills.
@@ -107,9 +107,9 @@ export default function Home() {
             <div style={styles.skillsGrid}>
               {[
                 { name: 'Abstract Ops', icon: '🔗', desc: 'Swap, transfer, wallet' },
-                { name: 'ERC-8004', icon: '🏷️', desc: 'Identity registration' },
-                { name: 'CryptoSkill', icon: '📦', desc: '869+ skills' },
-                { name: 'Wallet', icon: '💼', desc: 'AGW control' },
+                { name: 'ERC-8004', icon: '🏷️', desc: 'Identity #701' },
+                { name: 'Telegram', icon: '💬', desc: 'Bot control' },
+                { name: 'AI Gaming', icon: '🎮', desc: 'Gigaverse, RugPull' },
               ].map(skill => (
                 <div key={skill.name} style={styles.skillCard}>
                   <span style={styles.skillIcon}>{skill.icon}</span>
@@ -174,7 +174,7 @@ export default function Home() {
 
         {/* Footer */}
         <p style={styles.footer}>
-          Built on OpenClaw • ERC-8004 Trustless Agents • CryptoSkill Powered
+Built on Hermes • ERC-8004 Agent Identity • Abstract Chain Native
         </p>
       </div>
 

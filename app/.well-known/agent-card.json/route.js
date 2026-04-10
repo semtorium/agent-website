@@ -2,15 +2,15 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
   const agentCard = {
-    name: "SemtoriumAgent",
-    description: "Turkish-speaking AI agent on Abstract Chain with full AGW wallet control",
+    name: "Hermes",
+    description: "Turkish-speaking AI agent powered by Hermes on Abstract Chain. Specialized in blockchain operations, wallet management, and on-chain transactions.",
     url: "https://agent.semtoriumagent.vercel.app",
     version: "1.0.0",
     provider: {
       organization: "Semtorium",
       url: "https://github.com/semtorium/SemtoriumAgent"
     },
-    documentationUrl: "https://docs.openclaw.ai",
+    documentationUrl: "https://github.com/semtorium/hermes-docs",
     capabilities: {
       streaming: false,
       pushNotifications: false,

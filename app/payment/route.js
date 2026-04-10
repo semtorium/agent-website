@@ -4,9 +4,9 @@ export async function GET() {
   const paymentManifest = {
     version: "1.0",
     protocol: "x402",
-    name: "SemtoriumAgent Payment",
-    description: "Payment endpoint for SemtoriumAgent services",
-    payment_address: "0x9e335C32e1970EA1D051CbE1573733912fc3826b",
+    name: "Hermes Payment",
+    description: "Payment endpoint for Hermes AI agent services",
+    payment_address: "0xe129574F7e46009776C65cB662b4CaFe8146181C",
     chain: {
       id: 2741,
       name: "Abstract",
@@ -39,7 +39,7 @@ export async function GET() {
       }
     ],
     endpoints: {
-      webhook: "https://semtoriumagent.vercel.app/webhook",
+      webhook: "https://t.me/SemtoriumAgentbot",
       status: "https://semtoriumagent.vercel.app/api/health"
     }
   };

@@ -3,8 +3,8 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   const agentCard = {
     // Core Identity
-    name: "SemtoriumAgent",
-    description: "Turkish-speaking AI agent powered by OpenClaw on Abstract Chain. Specialized in blockchain operations, wallet management, and on-chain transactions.",
+    name: "Hermes",
+    description: "Turkish-speaking AI agent powered by Hermes on Abstract Chain. Specialized in blockchain operations, wallet management, and on-chain transactions.",
     url: "https://semtoriumagent.vercel.app",
     version: "1.0.0",
     
@@ -13,7 +13,7 @@ export async function GET() {
       organization: "Semtorium",
       url: "https://github.com/semtorium/SemtoriumAgent"
     },
-    documentationUrl: "https://docs.openclaw.ai",
+    documentationUrl: "https://github.com/semtorium/hermes-docs",
     
     // Capabilities
     capabilities: {
@@ -74,6 +74,27 @@ export async function GET() {
         description: "Access to CryptoSkill registry - 869+ crypto skills and 74 MCP servers",
         tags: ["cryptoskill", "mcp", "skills", "defi", "exchanges"],
         examples: ["Find Binance skills", "Install Kraken MCP"]
+      },
+      {
+        id: "telegram-bot",
+        name: "Telegram Bot",
+        description: "Interactive Telegram bot for agent communication",
+        tags: ["telegram", "bot", "messaging", "turkish"],
+        examples: ["Send me updates via Telegram", "Control via Telegram"]
+      },
+      {
+        id: "ai-gaming",
+        name: "AI Gaming",
+        description: "Autonomous gameplay - Gigaverse dungeon crawling, RugPull Bakery cookie baking, Abstract Mania brackets",
+        tags: ["gaming", "gigaverse", "rugpull", "abstract-mania", "autonomous"],
+        examples: ["Start a dungeon run", "Bake some cookies", "Create a bracket"]
+      },
+      {
+        id: "smart-contract",
+        name: "Smart Contract Development",
+        description: "Solidity, Foundry, ZK contracts on Abstract Chain",
+        tags: ["solidity", "foundry", "zk", "smart-contracts", "abstract"],
+        examples: ["Deploy a contract", "Audit my contract", "Write a new contract"]
       }
     ],
     
